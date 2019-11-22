@@ -10,7 +10,6 @@ int main(void){
 	 
 	sum = BOUND * (BOUND+1)/ 2;
 	squared = (BOUND * (BOUND + 1) * (2 * BOUND + 1)) / 6;
-	 
 	result = sum * sum - squared;
 
 	printf("The Sum Square difference is: %ld\n",  result);
