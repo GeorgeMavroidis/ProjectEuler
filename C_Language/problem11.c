@@ -6,8 +6,6 @@ int **makeGrid();
 int largest(int arr[], int n);
 
 int main(void){
-
-
   int **grid = makeGrid();
 
   long max = 0;
@@ -39,26 +37,14 @@ int main(void){
                 diag_up *= grid[y+i][x-i];
                 // printf("y: %d x: %d %d %d\n", y+i, x-i, grid[y+i][x-i], diag_up);
             }
-
-
-
       }
 
-      // int max_array[5];
       int max_array[5] = {horizontal, vertical, diag_up, diag_down, max};
-      // int n = sizeof(max_array)/sizeof(max_array[0]); 
       max = largest(max_array, 5);
-
-            // p1 *= grid[y][x+1];
-            // p2 *= grid[y+1][x];
-            // p3 *= grid[y+1][x+1];
-            // p4 *= grid[y+1][x-1];
     }
   }
 
-      printf("%ld\n", max);
-  // return max;
-
+    printf("%ld\n", max);
   return 0;
 
 }
